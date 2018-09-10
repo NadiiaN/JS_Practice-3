@@ -1,0 +1,11 @@
+exports.config = {
+    framework: 'jasmine',
+    onPrepare: function() {
+        console.log("Test execution has just started");
+    },
+    seleniumAddress: 'http://localhost:4444/wd/hub',
+    specs: ['spec.js'],
+    capabilities:{
+        browserName: "chrome"
+    }
+}
